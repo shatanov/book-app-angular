@@ -1,0 +1,51 @@
+@import "../mixins";
+
+.book-info {
+  &__title {
+    margin: 0 0 12px;
+    font-size: var(--font-size-l);
+    line-height: 36px;
+    color: var(--dark-grey);
+    text-align: center;
+
+    &--lg {
+      font-weight: var(--text-bold_m);
+      font-size: var(--font-size-xl);
+      line-height: 54px;
+    }
+  }
+
+  &__footnotes {
+    @include flex-position(center);
+    gap: 30px;
+    margin-bottom: 19px;
+  }
+
+  &__description {
+    font-weight: var(--text-bold_m);
+    font-size: var(--font-size-m);
+    line-height: 27px;
+    color: var(--grey);
+    padding-bottom: 15px;
+
+    &--sm {
+      font-size: var(--font-size-s);
+      line-height: 26px;
+    }
+  }
+
+  &__reviews {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@include desktop {
+  .book-info__title {
+    text-align: left;
+  }
+
+  .book-info__footnotes {
+    justify-content: start;
+  }
+}

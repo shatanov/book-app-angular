@@ -1,0 +1,32 @@
+@import "../mixins";
+
+.feedback {
+  &__info {
+    @include flex-position(start)
+  }
+
+  &__date {
+    font-size: var(--font-size-xs);
+    line-height: 21px;
+    color: var(--placeholder);
+  }
+
+  &__text {
+    font-size: var(--font-size-xs);
+    line-height: 25px;
+    color: var(--grey);
+
+    &--link {
+      color: var(--primary);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__rating {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,57 @@
+@import "../mixins";
+
+.detailed {
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__buttons {
+    display: none;
+
+    &--end {
+      display: flex;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 20px;
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+}
+
+@include desktop {
+  .detailed__wrapper {
+    gap: 40px;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+
+  .detailed__info {
+    display: block;
+  }
+
+  .detailed__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &--end {
+      display: none;
+    }
+  }
+}

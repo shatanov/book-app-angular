@@ -1,0 +1,30 @@
+.reviews {
+  &__title {
+    margin: 0 0 10px;
+    font-weight: var(--text-bold_m);
+    font-size: var(--font-size-l);
+    line-height: 36px;
+    color: var(--dark-grey);
+  }
+
+  &__more {
+    margin: 0 auto;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    border: none;
+    font-size: var(--font-size-xs);
+    line-height: 21px;
+    text-align: center;
+    color: var(--placeholder);
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__rating {
+    display: flex;
+  }
+}

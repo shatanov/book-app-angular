@@ -1,0 +1,34 @@
+@import "../mixins";
+
+.genres-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(89px, 93px));
+  gap: 20px;
+
+  &__genre {
+    box-sizing: border-box;
+    width: 93px;
+    height: 29px;
+    border: none;
+    background-color: var(--light-primary);
+    border-radius: var(--border-radius-s);
+    text-align: center;
+    @include flex-position(center);
+    font-size: var(--font-size-xs);
+    line-height: 21px;
+    color: var(--primary);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--primary);
+      color: var(--white);
+    }
+
+    &--active {
+      width: 89px;
+      height: 29px;
+      background-color: var(--primary);
+      color: var(--white);
+    }
+  }
+}

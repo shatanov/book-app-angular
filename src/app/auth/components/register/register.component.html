@@ -1,0 +1,36 @@
+<body class='wrapper'>
+<main class='main-registration'>
+  <div class='registration'>
+    <div class='registration__logo '>
+      <a href='#' class='logo logo--large'>Book<span class='logo__span'>App</span></a>
+    </div>
+    <form [formGroup]='form'
+          (ngSubmit)='onSubmint()'
+          class='registration__form form'>
+      <div class='registration__inputs'>
+        <label>
+          <span class='form-label'>Full name</span>
+          <input formControlName='fullName' class='text-field' type='text' placeholder='Ivan Ivanovich' required>
+        </label>
+        <label>
+          <span class='form-label'>Email</span>
+          <input formControlName='email' class='text-field' type='email' placeholder='someexample@example.com' required>
+        </label>
+        <label>
+          <span class='form-label'>Password</span>
+          <input formControlName='password' class='text-field' type='password' required>
+        </label>
+        <label>
+          <span class='form-label'>Password confirm</span>
+          <input formControlName='passwordConfirm' class='text-field' type='password' required>
+        </label>
+      </div>
+      <button class='form__btn' type='submit'>Sign up</button>
+    </form>
+    <div class='registration__text'>
+      Already have account?
+      <a [routerLink]="['/login']" class='registration__text--link'> Login</a>
+    </div>
+  </div>
+</main>
+</body>

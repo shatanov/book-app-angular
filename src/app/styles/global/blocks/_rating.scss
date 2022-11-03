@@ -1,0 +1,12 @@
+.rating {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+
+  &__score {
+    font-weight: var(--text-bold_l);
+    font-size: var(--font-size-m);
+    line-height: 25px;
+    color: var(--primary);
+  }
+}

@@ -1,0 +1,22 @@
+.book-img {
+  &--lg {
+    object-fit: cover;
+    width: 140px;
+    height: 232px;
+    border-radius: var(--border-radius-m);
+  }
+
+  &--xl {
+    object-fit: cover;
+    width: 253px;
+    height: 392px;
+    border-radius: var(--border-radius-m);
+  }
+
+  &--sm {
+    object-fit: cover;
+    width: 143px;
+    height: 222px;
+    border-radius: var(--border-radius-m);
+  }
+}
